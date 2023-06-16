@@ -2,6 +2,7 @@
 const config = require("../config");
 const { Managements } = require("../models");
 module.exports = {
+  // Getting data
   Getting_data: async (req,res)=>{
     try {
       const users = await Managements.findAll();
