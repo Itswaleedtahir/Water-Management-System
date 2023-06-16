@@ -40,7 +40,11 @@ app.use(
     ], // remove extra details from log
   })
 );
-app.use(cors());
+app.use(cors(
+  {
+    origin:"*"
+  }
+));
 
 // routes
 app.use("/api", router);
