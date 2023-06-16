@@ -14,6 +14,7 @@ module.exports = {
         .send(err.message || "Something went wrong...");
     }
   },
+  //Creation API
   Create: async (req, res) => {
     try {
       const { Date_of_issue,Page_no,For_the_month_of,Due_Date,Name_of_industrial_unit,Area,Day_of_water_connection,Current_water_bill,Current_maintenance_charges,Fire_fighting_charges,Water_charges,Maintenance_charges,surcharges,Amount_payable_within_due_date,Surcharges_on_current_bill,Amount_payable_after_the_due_date} = req.body;
